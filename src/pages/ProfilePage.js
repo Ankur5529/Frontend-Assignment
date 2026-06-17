@@ -23,7 +23,7 @@ const ProfilePage = () => {
         <div className="avatar-box">
           <img
             src={user.avatar}
-            alt={`Profile photo of ${user.name}`}
+            alt={user.name}
             className="avatar-img"
           />
           {/* edit badge — pencil icon */}
