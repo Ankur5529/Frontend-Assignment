@@ -1,0 +1,159 @@
+.signup-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  background-color: #f8f8ff;
+  padding: 52px 22px 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.signup-inner {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a2e;
+  line-height: 1.25;
+  letter-spacing: -0.3px;
+  margin-bottom: 28px;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* each label + input block */
+.field-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 18px;
+}
+
+.s-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6c25ff;
+}
+
+/* asterisk on required labels */
+.s-label.required::after {
+  content: '*';
+  margin-left: 1px;
+}
+
+.s-input {
+  width: 100%;
+  height: 44px;
+  padding: 0 12px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 4px;
+  font-size: 13.5px;
+  font-family: 'Inter', sans-serif;
+  color: #374151;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.s-input::placeholder {
+  color: #9ca3af;
+}
+
+.s-input:focus {
+  border-color: #6c25ff;
+}
+
+/* agency section */
+.agency-wrap {
+  margin-bottom: 20px;
+}
+
+.agency-q {
+  font-size: 13px;
+  color: #374151;
+  margin-bottom: 10px;
+}
+
+.radio-row {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.radio-opt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #374151;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* visually hide the native radio */
+.hidden-radio {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* custom radio circle */
+.radio-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #d1d5db;
+  background: #fff;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.2s;
+}
+
+/* filled state — checked */
+.hidden-radio:checked + .radio-dot {
+  border-color: #6c25ff;
+  background: #6c25ff;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
+/* stretchy gap that pushes button down */
+.grow-space {
+  flex: 1;
+  min-height: 40px;
+}
+
+.create-btn {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  background-color: #6c25ff;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  letter-spacing: 0.1px;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.create-btn:hover {
+  background-color: #5a1edf;
+}
+
+.create-btn:active {
+  transform: scale(0.98);
+}
