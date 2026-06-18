@@ -1,5 +1,5 @@
 {
-  "buildCommand": "DISABLE_ESLINT_PLUGIN=true npm run build",
+  "buildCommand": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
